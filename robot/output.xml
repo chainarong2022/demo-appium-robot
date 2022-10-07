@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221006 22:23:01.385" rpa="false" schemaversion="3">
+<suite id="s1" name="Case transaction" source="C:\Doc\piggipo\robot\Case_transaction.robot">
+<test id="s1-t1" name="test resource" line="23">
+<tag>try</tag>
+<status status="FAIL" starttime="20221006 22:23:02.061" endtime="20221006 22:23:02.063">Test contains no keywords.</status>
+</test>
+<test id="s1-t2" name="เลือกสมัครด้วย Gmail" line="25">
+<kw name="เลือกสมัครด้วย Gmail" library="login_gmail">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20221006 22:23:02.076" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20221006 22:23:02.073" endtime="20221006 22:23:02.084"/>
+</kw>
+<msg timestamp="20221006 22:23:02.086" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20221006 22:23:02.089" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20221006 22:23:02.072" endtime="20221006 22:23:02.090"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:02.091" endtime="20221006 22:23:02.091"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:02.091" endtime="20221006 22:23:02.091"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:02.091" endtime="20221006 22:23:02.091"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:23:02.072" endtime="20221006 22:23:02.092"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:23:02.068" endtime="20221006 22:23:02.092">No application is open</status>
+</test>
+<test id="s1-t3" name="ลูกค้าเข้ามาสมัคร ID ใหม่ยังไม่เคย login มาก่อน" line="28">
+<kw name="เปิด app ขึ้นมาใหม่">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:app=${appium:app}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20221006 22:23:02.101" endtime="20221006 22:23:16.547"/>
+</kw>
+<status status="PASS" starttime="20221006 22:23:02.101" endtime="20221006 22:23:16.547"/>
+</kw>
+<kw name="เลือกสมัครด้วย Gmail">
+<kw name="เลือกสมัครด้วย Gmail" library="login_gmail">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 22:23:16.551" endtime="20221006 22:23:18.903"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 22:23:18.908" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/signInButton'.</msg>
+<status status="PASS" starttime="20221006 22:23:18.903" endtime="20221006 22:23:19.025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 22:23:19.025" endtime="20221006 22:23:21.747"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 22:23:21.752" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout'.</msg>
+<status status="PASS" starttime="20221006 22:23:21.747" endtime="20221006 22:23:21.979"/>
+</kw>
+<status status="PASS" starttime="20221006 22:23:16.550" endtime="20221006 22:23:21.979"/>
+</kw>
+<status status="PASS" starttime="20221006 22:23:16.549" endtime="20221006 22:23:21.980"/>
+</kw>
+<kw name="ยอมรับเงื่อนไขต่างๆ">
+<kw name="ยอมรับเงื่อนไขต่างๆ" library="termaccept">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tv_downloading_status</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20221006 22:23:27.882" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2199"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.neversitup.piggipogo" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2199]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2199]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.neversitup.piggipogo" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" resource-id="com.neversitup.piggipogo:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.neversitup.piggipogo" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+            &lt;android.widget.RelativeLayout index="0" package="com.neversitup.piggipogo" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+              &lt;android.widget.FrameLayout index="0" package="com.neversitup.piggipogo" class="android.widget.FrameLayout" text="" resource-id="com.neversitup.piggipogo:id/loginContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+                &lt;android.view.ViewGroup index="0" package="com.neversitup.piggipogo" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+                  &lt;android.widget.ScrollView index="0" package="com.neversitup.piggipogo" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+                    &lt;android.widget.LinearLayout index="0" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,2199]" displayed="true"&gt;
+                      &lt;android.widget.LinearLayout index="0" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,74][1080,721]" displayed="true"&gt;
+                        &lt;android.widget.ImageView index="0" package="com.neversitup.piggipogo" class="android.widget.ImageView" text="" resource-id="com.neversitup.piggipogo:id/logo_login" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[287,299][793,479]" displayed="true" /&gt;
+                        &lt;android.widget.TextView index="1" package="com.neversitup.piggipogo" class="android.widget.TextView" text="LET'S MANAGE YOUR CREDIT CARDS &amp;#10;AND BUDGETS BETTER" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[224,524][856,648]" displayed="true" /&gt;
+                        &lt;android.widget.TextView index="2" package="com.neversitup.piggipogo" class="android.widget.TextView" text="This is new account, the data will NOT Sync from Piggipo" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[121,671][958,721]" displayed="true" /&gt;
+                      &lt;/android.widget.LinearLayout&gt;
+                      &lt;android.widget.LinearLayout index="1" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,766][1080,1397]" displayed="true"&gt;
+                        &lt;android.widget.Button index="0" package="com.neversitup.piggipogo" class="android.widget.Button" text="Sign in with Google" resource-id="com.neversitup.piggipogo:id/signInButton" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[101,766][979,901]" displayed="true" /&gt;
+                        &lt;android.widget.FrameLayout index="1" package="com.neversitup.piggipogo" class="android.widget.FrameLayout" text="" resource-id="com.neversitup.piggipogo:id/btnFacebookLogin" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[101,924][979,1059]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.neversitup.piggipogo" class="android.widget.ImageView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[146,946][236,1036]" displayed="true" /&gt;
+                          &lt;android.widget.TextView index="1" package="com.neversitup.piggipogo" class="android.widget.TextView" text="Continue with Facebook" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[301,955][779,1027]" displayed="true" /&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                        &lt;android.widget.TextView index="2" package="com.neversitup.piggipogo" class="android.widget.TextView" text="We don’t post anything to Facebook" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[233,1082][846,1140]" displayed="true" /&gt;
+                        &lt;android.widget.LinearLayout index="3" package="com.neversitup.piggipogo" class="android.widget.LinearLayout" text="" resource-id="com.neversitup.piggipogo:id/layoutTerms" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[184,1208][896,1329]" displayed="true"&gt;
+                          &lt;android.widget.TextView index="0" package="com.neversitup.piggipogo" class="android.widget.TextView" text="By clicking sign in you are agreeing to the" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[184,1208][896,1266]" displayed="true" /&gt;
+                          &lt;android.widget.TextView index="1" package="com.neversitup.piggipogo" class="android.widget.TextView" text="Terms and Conditions" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[353,1266][727,1329]" displayed="true" /&gt;
+                        &lt;/android.widget.LinearLayout&gt;
+                      &lt;/android.widget.LinearLayout&gt;
+                    &lt;/android.widget.LinearLayout&gt;
+                  &lt;/android.widget.ScrollView&gt;
+                &lt;/android.view.ViewGroup&gt;
+              &lt;/android.widget.FrameLayout&gt;
+            &lt;/android.widget.RelativeLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+    &lt;android.view.View index="1" package="com.neversitup.piggipogo" class="android.view.View" text="" resource-id="android:id/statusBarBackground" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,74]" displayed="true" /&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20221006 22:23:28.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 22:23:27.884" endtime="20221006 22:23:28.825"/>
+</kw>
+<msg timestamp="20221006 22:23:28.825" level="FAIL">Element locator 'id=com.neversitup.piggipogo:id/tv_downloading_status' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20221006 22:23:21.982" endtime="20221006 22:23:28.829"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tv_downloading_status</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:28.830" endtime="20221006 22:23:28.830"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnTermAccept</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:28.831" endtime="20221006 22:23:28.831"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnTermAccept</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20221006 22:23:28.832" endtime="20221006 22:23:28.832"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:23:21.981" endtime="20221006 22:23:28.834"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:23:21.981" endtime="20221006 22:23:28.837"/>
+</kw>
+<kw name="ยอมรับนโยบาย">
+<status status="NOT RUN" starttime="20221006 22:23:28.839" endtime="20221006 22:23:28.839"/>
+</kw>
+<kw name="Allow permission">
+<status status="NOT RUN" starttime="20221006 22:23:28.841" endtime="20221006 22:23:28.841"/>
+</kw>
+<kw name="ผู้ใช้งานสามารถเข้าเเอพได้">
+<status status="NOT RUN" starttime="20221006 22:23:28.842" endtime="20221006 22:23:28.842"/>
+</kw>
+<kw name="กดเลือก Credit">
+<status status="NOT RUN" starttime="20221006 22:23:28.843" endtime="20221006 22:23:28.844"/>
+</kw>
+<kw name="กดเพิ่ม Transection">
+<status status="NOT RUN" starttime="20221006 22:23:28.845" endtime="20221006 22:23:28.845"/>
+</kw>
+<kw name="กดใส่จำนวนเงิน 5000">
+<status status="NOT RUN" starttime="20221006 22:23:28.846" endtime="20221006 22:23:28.846"/>
+</kw>
+<kw name="กดปุ่มเพื่อเข้าไปเข้าหน้าเลือกใช้ Category">
+<status status="NOT RUN" starttime="20221006 22:23:28.848" endtime="20221006 22:23:28.848"/>
+</kw>
+<kw name="กดเลือกเเถบ BILL PAYMENT">
+<status status="NOT RUN" starttime="20221006 22:23:28.848" endtime="20221006 22:23:28.849"/>
+</kw>
+<kw name="กดเลือก Category อันเเรก">
+<status status="NOT RUN" starttime="20221006 22:23:28.849" endtime="20221006 22:23:28.849"/>
+</kw>
+<kw name="ใส่ cashback">
+<status status="NOT RUN" starttime="20221006 22:23:28.850" endtime="20221006 22:23:28.850"/>
+</kw>
+<kw name="กดเลือกวันที่การทำ Transaction">
+<status status="NOT RUN" starttime="20221006 22:23:28.852" endtime="20221006 22:23:28.852"/>
+</kw>
+<kw name="กดติ๊กถูก">
+<status status="NOT RUN" starttime="20221006 22:23:28.853" endtime="20221006 22:23:28.853"/>
+</kw>
+<kw name="กดเลือก Transaction ที่พึ่งสร้างไปจะอยู่อันที่ 2">
+<status status="NOT RUN" starttime="20221006 22:23:28.854" endtime="20221006 22:23:28.855"/>
+</kw>
+<kw name="กดปุ่ม Edit">
+<status status="NOT RUN" starttime="20221006 22:23:28.856" endtime="20221006 22:23:28.856"/>
+</kw>
+<tag>test</tag>
+<status status="FAIL" starttime="20221006 22:23:02.095" endtime="20221006 22:23:28.858">Element locator 'id=com.neversitup.piggipogo:id/tv_downloading_status' did not match any elements after 5 seconds</status>
+</test>
+<status status="FAIL" starttime="20221006 22:23:01.390" endtime="20221006 22:23:28.877"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">test</stat>
+<stat pass="0" fail="1" skip="0">try</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Case transaction">Case transaction</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221006 22:23:02.086" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
